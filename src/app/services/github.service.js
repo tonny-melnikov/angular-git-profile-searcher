@@ -14,8 +14,8 @@ require("rxjs/add/operator/map");
 var GithubService = (function () {
     function GithubService(_http) {
         this._http = _http;
-        this.client_id = '7adbb130074a034355ed';
-        this.client_secret = '4176ab467cc97d8f15f564dc76c4c06cef42784e';
+        this.client_id = process.env.CLIENT_ID;
+        this.client_secret = process.env.CLIENT_SECRET;
         console.log('Service ready');
         this.username = 'pinkyrabbit';
     }
