@@ -5,13 +5,15 @@
   "scripts": {
     "build": "tsc -p src/",
     "serve": "lite-server -c=bs-config.json",
-    "start": "concurrently \"npm run build\" \"npm run serve\"",
-    "deploy": "git push origin master && git push heroku master"
+    "start": "concurrently \"npm run postinstall\" \"npm run serve\"",
+    "deploy": "git push origin master && git push heroku master",
+    "postinstall": "ng build --aot -prod"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@angular/cli": "*",
     "@angular/common": "~4.3.4",
     "@angular/compiler": "~4.3.4",
     "@angular/core": "~4.3.4",
