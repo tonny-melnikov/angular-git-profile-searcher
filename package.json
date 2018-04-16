@@ -7,7 +7,7 @@
       "serve": "http-server src/",
       "start": "concurrently \"npm run build\" \"npm run serve\"",
       "deploy": "git push origin master && git push heroku master",
-      "preinstall": "npm install -g http-server",
+      "preinstall": "npm install -g http-server"
     },
     "keywords": [],
     "author": "",
