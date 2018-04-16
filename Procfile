@@ -1,1 +1,0 @@
-"postinstall": "ng build --aot -prod"

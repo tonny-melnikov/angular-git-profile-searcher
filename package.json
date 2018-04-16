@@ -4,13 +4,12 @@
     "description": "QuickStart package.json from the documentation, supplemented with testing support",
     "scripts": {
       "build": "tsc -p src/",
-      "serve": "http-server src/",
+      "serve": "lite-server -c=bs-config.json",
       "start": "concurrently \"npm run build\" \"npm run serve\"",
-      "deploy": "git push origin master && git push heroku master",
-      "preinstall": "npm install -g http-server"
+      "deploy": "git push origin master && git push heroku master"
     },
     "keywords": [],
-    "author": "",
+    "author": "Mikita Melnikau",
     "license": "MIT",
     "dependencies": {
       "@angular/common": "~4.3.4",
