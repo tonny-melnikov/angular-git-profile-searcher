@@ -4,16 +4,16 @@
     "description": "QuickStart package.json from the documentation, supplemented with testing support",
     "scripts": {
       "build": "tsc -p src/",
-      "serve": "lite-server -c=bs-config.json",
+      "serve": "serve",
       "start": "concurrently \"npm run build\" \"npm run serve\"",
-      "deploy": "git push origin master && git push heroku master"
+      "deploy": "git push origin master && git push heroku master",
+      "preinstall": "npm install serve @angular/compiler @angular/cli @angular/compiler-cli serve concurrently typescript@2.6.2 --save"
     },
     "keywords": [],
     "author": "",
     "license": "MIT",
     "dependencies": {
       "@angular/common": "~4.3.4",
-      "@angular/compiler": "~4.3.4",
       "@angular/core": "~4.3.4",
       "@angular/forms": "~4.3.4",
       "@angular/http": "~4.3.4",
@@ -28,9 +28,6 @@
       "zone.js": "^0.8.4"
     },
     "devDependencies": {
-      "concurrently": "^3.2.0",
-      "lite-server": "^2.2.2",
-      "typescript": "~2.1.0",
   
       "canonical-path": "0.0.2",
       "tslint": "^3.15.1",
