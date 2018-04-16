@@ -1,5 +1,6 @@
-/* tslint:disable:no-unused-variable */
 "use strict";
+/* tslint:disable:no-unused-variable */
+Object.defineProperty(exports, "__esModule", { value: true });
 var testing_1 = require("@angular/core/testing");
 var github_service_1 = require("./github.service");
 describe('Service: Github', function () {
