@@ -4,7 +4,7 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
     "build": "tsc -p src/",
-    "serve": "serve",
+    "serve": "ng serve",
     "start": "concurrently \"npm run build\" \"npm run serve\"",
     "deploy": "git push origin master && git push heroku master",
     "preinstall": "npm install serve --save && npm install @angular/cli @angular/compiler @angular/compiler-cli serve concurrently typescript@2.6.2 --save-dev"
